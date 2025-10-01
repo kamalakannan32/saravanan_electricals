@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro Store: Vaduvur</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #7cc3e481;
+      color: #db1e1e;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* Header & Navigation */
+    header {
+      background-color: #004080e5;
+      color: #fff;
+      padding: 15px 30px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 525px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      text-decoration: underline;
+      color: #fafafa;
+      
+    }
+
+    /* Headings */
+    h2 {
+      text-align: center;
+      color: #000;
+      margin: 30px 0 15px;
+    }
+
+    /* Paragraphs */
+    p {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      text-align: center;
+      line-height: 1.8;
+      color: rgb(68, 80, 60);
+      font-size: 1.1rem;
+    }
+
+    /* Product Section - 3 per row */
+    
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;  
+}
+
+.product .image {
+  background: #5f383831;
+  padding: 4 px;
+  border-radius: 35px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  align-items: center; 
+}
+
+.product .image:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 250px;       /* fixed width */
+  height: 350px;      /* fixed height */
+  object-fit: contain; /* keeps aspect ratio inside box */
+  border-radius: 6px;
+  margin-bottom: 0.1px;
+  
+}
+
+.product h3 {
+  font-size: 1rem;   /* smaller font */
+  color: #240909;      /* dark red */
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+    /* Responsive: stack on small screens */
+    @media (max-width: 768px) {
+      .product {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .product {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="smart homes.html" class="active">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>SMART DOOR LOCKS</h2>
+  <p>The future of safety is here. Finolex Smart Door Locks, the ultimate solution for your home security. These innovative locks use CMOS Technology for Biometric Sensor, which allows you to unlock your door with your fingerprint. No more keys, no more hassle. Plus, it can be operated using Password, RFID Card and Mechanical Key. The Finolex Smart Door Locks are not only secure, but also stylish. They come in various sleek and modern designs that will enhance your home's appearance.</p>
+   <section class="product">
+    <div class="image"><img src="/finolex image/smart/Door Locks/(FCL-5 Pro).png" alt="Digital Main Door Lock (FCL-5 Pro)"><h3>Digital Main Door Lock (FCL-5 Pro)</h3></div>
+    <div class="image"><img src="/finolex image/smart/Door Locks/(FCL-2 Pro).png" alt="Digital Main Door Lock (FCL-2 Pro)"><h3>Digital Main Door Lock (FCL-2 Pro)</h3></div>
+    <div class="image"><img src="/finolex image/smart/Door Locks/(FCL 01) without face recognition.png" alt="Digital Main Door Lock (FCL 01) without face recognition"><h3>Digital Main Door Lock (FCL 01) without face recognition</h3></div>
+    <div class="image"><img src="/finolex image/smart/Door Locks/(FCL-5I).png" alt="Digital Main Door Lock (FCL-5I)"><h3>Digital Main Door Lock (FCL-5I)</h3></div>
+    
+    
+  </section>
+</body>
+</html>
+
+
+
+
+
+

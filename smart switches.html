@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro Store: Vaduvur</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      background-color: #004080;
+      color: #fff;
+      padding: 15px 625px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      text-decoration: underline;
+      color: #fafafa;
+    }
+
+    /* Headings */
+    h2 {
+      text-align: center;
+      color: #000;
+      margin: 30px 0 15px;
+    }
+
+    /* Paragraph */
+    p {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      text-align: center;
+      line-height: 1.8;
+      color: rgb(29, 158, 209);
+      font-size: 1.1rem;
+    }
+
+    /* Product Section */
+    .product {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .product .image {
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      height: 300px; /* Fixed box height */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product .image:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Force all images same size */
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      background: #fff;
+      padding: 5px;
+    }
+
+    .product h3 {
+      font-size: 1rem;
+      color: #333;
+      margin-top: auto;
+    }
+        /* Different background colors */
+    .image:nth-child(1) { background: #1f1e1d2f; }
+    .image:nth-child(2) { background: #1f1e1d2f; }
+    .image:nth-child(3) { background: #1f1e1d2f; }
+  
+ 
+   
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Switches.html" class="active">Home</a></li>       
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Finotouch - Smart Switches</h2>
+  <p>Finotouch, the ultimate in home automation. With remote access and control, homeowners can command their devices from anywhere using smartphones, tablets, or computers. It seamlessly integrates with voice-controlled smart assistants like Amazon Alexa, Google Assistant, or Apple Siri, and offers an array of customization options, enabling tailored schedules and scenes to match your lifestyle.</p>
+
+  <section class="product">
+    <div class="image">
+      <img src="/finolex image/switch/Smart Switche/3 Switches.png" alt="Switches">
+      <h3>1 Fan, 3 Switches (Wifi)</h3>
+    </div>
+    <div class="image">
+      <img src="/finolex image/switch/Smart Switche/4 Switches.png" alt="Switches">
+      <h3>1 Fan, 4 Switches (Wifi)</h3>
+    </div>
+    <div class="image">
+      <img src="/finolex image/switch/Smart Switche/5 Switches.png" alt="Switches">
+      <h3>2 Fan, 5 Switches (Wifi)</h3>
+    </div>
+   
+  </section>
+</body>
+</html>

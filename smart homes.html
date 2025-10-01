@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro Store: Vaduvur</title>
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      
+      background-color: #004080;
+      color: #fff;
+      padding: 15px 575px;
+      
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a.active {
+      text-decoration: underline;
+    }
+
+    h2 {
+      text-align: center;
+      color: #000000;
+      margin: 20px 0 10px;
+    }
+
+   p {
+  max-width: 800px;   
+  margin: 0 auto 20px; 
+  text-align: center;   
+  line-height: 1.6;   
+}
+
+    .products {
+  display: flex;
+  justify-content: center;  
+  flex-wrap: wrap;         
+  gap: 30px;               
+  margin-top: 30px;
+}
+
+.product-item {
+  background: #9ae6db59;
+  padding: 20px;
+  text-align: center;
+  width: 2800px;       
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.product-item img {
+  width: 100%;           
+  max-width: 900px;      
+  height: auto;
+  border-radius: 60px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-item img:hover {
+  transform: scale(1.05);
+}
+
+
+.product-item button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+  .product-item p {
+    max-width: 700px;         
+    margin: 0 auto 20px;   
+    line-height: 1.6;
+    text-align: center;       
+  }
+
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Finolex.html" class="active">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>SMART HOMES</h2>
+  <P>Finolex Smart products offer you the latest technological innovations for your home. Whether you need Smart Door Locks or Smart Switches, our smart products are designed to bring you the best of technology and convenience. With Finolex Smart solutions, you can upgrade your home the smart way and take stress out of your mind.</P>
+   <section class="products">
+ <div class="product-item">
+  <img src="/finolex image/smart/smart logo/door logo.png" alt="smart door locks" onclick="window.location.href='smart door locks.html'" 
+    style="cursor: pointer;">        
+  <h2>Smart Door Locks</h2>
+  <p>The future of safety is here. Finolex Smart Door Locks, the ultimate solution for your home security. These innovative locks use CMOS Technology for Biometric Sensor, which allows you to unlock your door with your fingerprint. No more keys, no more hassle. Plus, it can be operated using Password, RFID Card and Mechanical Key. The Finolex Smart Door Locks are not only secure, but also stylish. They come in various sleek and modern designs that will enhance your home's appearance.</p>
+    <button onclick="window.location.href='smart door locks.html'" 
+          style="margin-top: 10px; padding: 10px 20px; background:#004080; color:white; border:none; border-radius:5px; cursor:pointer;">
+    VIEW ALL PRODUCTS</button>
+  <h4 style="margin-top: 10px;"></h4>
+ </div>
+
+
+</section>
+
+</body>
+</html>

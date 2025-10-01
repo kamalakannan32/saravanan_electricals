@@ -1,0 +1,139 @@
+/* General Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #111;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/*
+.back-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  color: #00ffcc;
+  text-decoration: underline;
+}
+
+
+
+.banner {
+    
+    color: white;
+    padding: 80px 20px;
+    font-size: 24px;
+    text-align: center;    
+}
+
+input#search {
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    font-size: 18px;
+    border: 2px solid #ff5722;
+    border-radius: 5px;
+    outline: #ff5722;
+}
+  
+.menu {
+  display: flex; 
+  flex-wrap: wrap; /* Allows items to move to next line */
+  justify-content: center; /* Center align */
+  gap: 125px; /* Space between items */
+  padding: 20px;
+}
+
+.brand-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 150px;
+  width: 20px; /* Same box size for all */
+}
+
+.brand-menu img {
+  width: 200px;    /* Same image width */
+  height: 200px;   /* Same image height */
+  object-fit: contain; /* Keep proportions without stretching */
+  background: white; /* Optional: white background for logos */
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.brand-menu h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff; /* brand name*/
+}
+
+
+@media (max-width: 480px) {
+  .brand-menu {
+    width: 90%;
+  }
+}
+  
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+.bounce {
+  animation: bounce 1.5s infinite alternate;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}

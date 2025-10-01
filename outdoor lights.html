@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outdoor Lights - Saravanan Electricals</title>
+<style>
+  /* Reset & Base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #7cc3e481;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Header */
+  header {
+    background-color: #004080e5;
+    color: #fff;
+    padding: 15px 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    text-decoration: underline;
+    color: #fafafa;
+  }
+
+  /* Headings */
+  h2 {
+    text-align: center;
+    color: #000;
+    margin: 30px 0 15px;
+  }
+
+  /* Paragraph */
+  p {
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+    color: rgb(68, 80, 60);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  /* Product Section - Centered images */
+  .product {
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    gap: 40px;               /* spacing between images */
+    flex-wrap: wrap;         /* allow wrapping on small screens */
+  }
+
+  .product .image {
+    background: #5f383831;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .product .image:hover {
+    transform: translateY(-5px);
+  }
+
+  .product img {
+    display: block;
+    width: 300px;     /* bigger width */
+    height: 400px;    /* bigger height */
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .product h3 {
+    font-size: 1.1rem;
+    color: #240909;
+    margin-top: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .product img {
+      width: 250px;
+      height: 350px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .product {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product img {
+      width: 200px;
+      height: 280px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="lights.html" class="active">Home</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h2>Outdoor Lights</h2>
+<p>If you think outdoors are already naturally beautiful, then clearly you have not given the new range of Finolex lighting a glance. Our outdoor & industrial lighting includes durable and weather-resistant fixtures such as LED floodlights and LED streetlights.</p>
+
+<section class="product">
+  <div class="image">
+    <img src="/finolex image/lights/outdoor lights/LED Lens Street Light.png" alt="LED Lens Street Light">
+    <h3>LED Lens Street Light</h3>
+  </div>
+  <div class="image">
+    <img src="/finolex image/lights/outdoor lights/LED Flood Light.png" alt="LED Flood Light">
+    <h3>LED Flood Light</h3>
+  </div>
+</section>
+
+</body>
+</html>

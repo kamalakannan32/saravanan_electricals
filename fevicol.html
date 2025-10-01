@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electro Store: Vaduvur</title>
+
+  <style>
+    body {
+  background-size: cover;
+  background-position: center;
+}
+  
+    /* Slider */
+    .background {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      
+    }
+    
+    .background img {
+      display: none;
+    }
+      /* Controls */
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    
+
+    .btn {
+      font-size: 3rem;
+      color: rgb(179, 169, 169);
+      background: rgba(0, 0, 0, 0.4);
+      padding: 5px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.3s;
+    }
+
+    /* Product Section */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 20px;
+      background: #d5e0d7;
+      gap: 30px;
+    }
+    .product-item {
+      width: 200px;
+      text-align: center;
+      background: #cfcaca;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .product-item:hover {
+      transform: translateY(-5px);
+    }
+    .product-item img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .product-item h3 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  /* Header styling */
+header {
+  width: 100%;
+  background-color: #70451c93; /* Dark background */
+  position: sticky; /* Sticks to top on scroll */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(139, 47, 47, 0.3);
+}
+
+/* Navigation menu */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Space links evenly across width */
+  align-items: center;
+  max-width: 400px; /* Optional: limit width */
+  margin: 0 auto; /* Center nav */
+}
+
+/* Menu items */
+nav ul li {
+  margin: 0; /* Remove extra margin */
+}
+
+/* Menu links */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  transition: color 0.3s, background 0.3s;
+  border-radius: 5px;
+}
+
+
+
+/* Hover effect */
+nav ul li a:hover {
+  background-color: #555;
+  color: #fff;
+}
+  
+  </style>
+</head>
+<body>
+  <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+              
+            </ul>
+        </nav>
+    </header>
+  <!-- Background Slider -->
+  <div class="background">
+    <img src="/fevicol image/Wood-Working.jpg" alt="img 1">
+  </div>
+   
+   <center><h2>OUR PRODUCTS</h2></center>
+   
+ 
+  <!-- Product Section -->
+  <section class="products">
+    <div class="product-item">
+       <img src="/fevicol image/Fevicol SH.png" alt="Fevicol SH">
+       <h3>Fevicol SH</h3>
+    </div>
+    <div class="product-item">
+      <img src="/fevicol image/Fevicol Marine.png" alt="Fevicol Marine" >
+      <h3>Fevicol Marine</h3>
+    </div>
+    
+    <div class="product-item">
+      <img src="/fevicol image/Fevicol Hi-Per.png" alt="Fevicol Hi-Per">
+      <h3>Fevicol Hi-Per</h3>
+    </div>
+    <div class="product-item">
+      <img src="/fevicol image/Fevicol HeatX.png" alt="Fevicol HeatX">
+      <h3>Fevicol HeatX</h3>
+    </div>
+    <div class="product-item">
+      <img src="/fevicol image/Fevicol Ezee Spray.png" alt="Fevicol Ezee Spray">
+      <h3>Fevicol Ezee Spray</h3>
+    </div>
+    
+      <div class="product-item">
+      <img src="/fevicol image/Fevicol ProBond.png" alt="Fevicol ProBond">
+      <h3>Fevicol ProBond</h3>
+    </div>
+
+    <div class="product-item">
+      <img src="/fevicol image/Fevicol SpeedX.png" alt="Fevicol SpeedX">
+      <h3>Fevicol SpeedX</h3>
+    </div>
+
+  </section>
+
+  <script>
+const imgs = document.querySelectorAll(".background img");
+const images = Array.from(imgs).map(img => img.src);
+let index = 0;
+
+function showImage(i) {
+  // Apply background to the slider div, not body
+  document.querySelector(".background").style.backgroundImage = `url('${images[i]}')`;
+  document.querySelector(".background").style.backgroundSize = "cover";
+  document.querySelector(".background").style.backgroundPosition = "center";
+}
+
+function nextImage() {
+  index = (index + 1) % images.length;
+  showImage(index);
+}
+
+function prevImage() {
+  index = (index - 1 + images.length) % images.length;
+  showImage(index);
+}
+
+// Show first image
+showImage(index);
+</script>
+
+  </script>
+</body>
+</html>
